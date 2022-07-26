@@ -9,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      <h1>React App</h1>
     </div>
   );
 }
