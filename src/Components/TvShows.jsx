@@ -15,7 +15,6 @@ function TvShows() {
   );
   const characterTvShows = filterArray[0].tvShows;
 
-  // console.log(params);
   return (
     <div>
       <Navbar heading={`${filterArray[0].name} Tv Shows`} />
