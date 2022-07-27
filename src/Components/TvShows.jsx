@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function TvShows() {
   const params = useParams();
@@ -14,7 +15,7 @@ function TvShows() {
   // console.log(params);
   return (
     <div>
-      <h2>Tv shows</h2>
+      <Navbar heading={`${filterArray[0].name} Tv Shows`} />
       <img src={filterArray[0].imageUrl} alt={filterArray[0].name} />
       <h3>{filterArray[0].name}</h3>
       {characterTvShows.map((show) => (
