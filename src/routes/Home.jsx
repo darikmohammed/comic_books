@@ -4,7 +4,7 @@ import Characters from '../Components/Characters';
 import Navbar from '../Components/Navbar';
 import GetDisney from '../Redux/Disney/GetDisney';
 
-import Container from './Styles/Home.style';
+import Container, { SearchInput } from './Styles/Home.style';
 
 function Home() {
   const dispatch = useDispatch();
@@ -16,7 +16,8 @@ function Home() {
   return (
     <div>
       <Navbar heading="Disney Characters" />
-      <input
+
+      <SearchInput
         type="text"
         placeholder="Search ...."
         onChange={(event) => {
