@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Netlify Live Demo Link]()
+[Netlify Live Demo Link](https://disney-tv-show.herokuapp.com/)
 
 ## Getting Started
 
