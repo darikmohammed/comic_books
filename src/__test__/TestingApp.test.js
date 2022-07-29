@@ -13,7 +13,7 @@ describe(Home, () => {
     renderWithProviders(
       <BrowserRouter>
         <Home />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     const navHeading = screen.getByText('Disney Characters');
     expect(navHeading).toBeInTheDocument();
@@ -30,7 +30,7 @@ describe(Characters, () => {
           image="imgsrc"
           tvShows={2}
         />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     const characters = await screen.findByRole('heading', {
       name: /testing character/i,
@@ -44,7 +44,7 @@ describe(App, () => {
     renderWithProviders(
       <BrowserRouter>
         <App />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     const searchField = screen.getByPlaceholderText('Search ....');
     expect(searchField).toBeInTheDocument();
@@ -53,7 +53,7 @@ describe(App, () => {
     renderWithProviders(
       <BrowserRouter>
         <App />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     const charac = await screen.findByText('Abigail');
     expect(charac).toBeInTheDocument();
@@ -62,7 +62,7 @@ describe(App, () => {
     renderWithProviders(
       <BrowserRouter>
         <App />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     const searchField = screen.getByPlaceholderText('Search ....');
     await userEvent.type(searchField, 'test');
