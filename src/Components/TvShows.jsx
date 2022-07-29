@@ -8,7 +8,7 @@ import Container from './Styles/TvShows.style';
 
 function TvShows() {
   const params = useParams();
-  const characters = useSelector((state) => state.Disney.characters);
+  const characters = useSelector((state) => state.Disney);
   const filterArray = characters.filter(
     // eslint-disable-next-line no-underscore-dangle
     (character) => character._id === Number(params.id),

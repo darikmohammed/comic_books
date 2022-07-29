@@ -9,7 +9,8 @@ import Container, { SearchInput } from './Styles/Home.style';
 function Home() {
   const dispatch = useDispatch();
   const [search, setSearch] = useState('');
-  const characters = useSelector((state) => state.Disney.characters);
+  const characters = useSelector((state) => state.Disney);
+  // const characters = charactersArray[0];
   useEffect(() => {
     dispatch(GetDisney());
   }, []);
